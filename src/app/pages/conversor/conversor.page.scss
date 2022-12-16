@@ -1,0 +1,34 @@
+.feliz{
+    width: 50px;
+    height: auto;
+    padding-top: 10px;
+    padding-right: 10px;
+ }
+ 
+ .icon-cash,.icon-cash:before{
+    position:absolute;
+    width:6em;
+    height:3em;
+    background:#3E8E3D;
+    border:5px solid #2D722C;
+  }
+  .icon-cash:before{
+    content:"";
+    position:absolute;
+    top:-1em;
+    right:-1em;
+    z-index:-1;
+  }
+  .icon-cash:after{
+    content:"$";
+    position:absolute;
+    top:0.35em;
+    left:1.5em;
+    width:1.2em;
+    height:1.2em;
+    font-size:1.4em;
+    text-align:center;
+    color:#1E541D;
+    border:3px solid #1E541D;
+    border-radius:50%
+  }

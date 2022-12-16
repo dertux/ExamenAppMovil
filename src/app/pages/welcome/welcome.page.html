@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>TellevoApp</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <img src="/assets/feliz.png" class="feliz"/>
+      </ion-avatar> 
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <img src="/assets/tla.png" alt="">
+
+  <ion-card-content>
+    Queremos darte un servicio fácil rápido y de calidad, Viaja de una forma segura. Movilizamos al mundo, eso es lo que mejor hacemos.
+  </ion-card-content>
+
+
+<ion-slides [options]="option" class="ion-margin-top">
+  <ion-slide>
+    <ion-card>
+      <img src="/assets/slider1.png" alt="">
+    </ion-card>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-card>
+      <img src="/assets/slider2.png" alt="">
+    </ion-card>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-card>
+      <img src="/assets/slider3.png" alt="">
+    </ion-card>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-card>
+      <img src="/assets/Tellevoapp.png" alt="">
+    </ion-card>
+  </ion-slide>
+
+</ion-slides>
+
+<!--
+  <ion-card-content>
+    <ion-button color="success" routerLink="/coversor">+info</ion-button>
+  </ion-card-content>
+-->
+
+
+  <ion-tab-bar >
+    <ion-tab-button tab="speakers" routerLink="/about">
+      <ion-icon name="person-circle"></ion-icon>
+      <ion-label>perfiles</ion-label>
+    </ion-tab-button>
+
+
+    <ion-tab-button tab="about" routerLink="/login">
+      <ion-icon name="log-out"></ion-icon>
+      <ion-label>Log out</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+
+
+  
+
+
+</ion-content>
+

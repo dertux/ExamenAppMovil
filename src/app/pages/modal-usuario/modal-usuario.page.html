@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="usuario">
+    <ion-item>
+      <ion-label position="stacked">Name</ion-label>
+      <ion-input type="text" [(ngModel)]="usuario.name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Lastname</ion-label>
+      <ion-input type="text" [(ngModel)]="usuario.lastname" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Gender</ion-label>
+      <ion-input type="text" [(ngModel)]="usuario.gender" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Age</ion-label>
+      <ion-input type="number" [(ngModel)]="usuario.age" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">rut</ion-label>
+      <ion-input type="text" [(ngModel)]="usuario.rut" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">teléfono</ion-label>
+      <ion-input type="number" [(ngModel)]="usuario.phone" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">País</ion-label>
+      <ion-input type="text" [(ngModel)]="usuario.country" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Comuna</ion-label>
+      <ion-input type="text" [(ngModel)]="usuario.comuna" ></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input type="email" [(ngModel)]="usuario.email" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Image</ion-label>
+      <ion-input type="url" [(ngModel)]="usuario.image" ></ion-input>
+    </ion-item>
+  </div>
+
+  <!-- <ion-item>
+    <ion-avatar (click)="uploadAvatar()">
+      <ion-icon name="images"></ion-icon>
+    </ion-avatar>
+    <ion-input type="text" [(ngModel)]="usuario.image"></ion-input>
+  </ion-item> -->
+
+
+  <ion-button expand="block" color="success" (click)="updateUsuario()">
+    <ion-icon name="save" slot="start">Update</ion-icon>
+  </ion-button>
+  <ion-button expand="block" color="danger" (click)="deleteUsuario()">
+    <ion-icon name="trash" slot="start">Delete</ion-icon>
+  </ion-button>
+
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="red">error404</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title slot="start">¡Me parece que necesitas ayuda, vuelve al inicio!</ion-title>
+      <img  src="/assets/feliz.png"  slot="end" class="feliz">
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title color="danger">La página no fue encontrada &#9940;</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        ¡El contenido que buscabas no está disponible
+      </ion-card-content>
+  
+      <ion-item class="ion-activated" [routerLink]="['/login']"  color="danger">
+        <ion-icon name="arrow-undo-outline" ></ion-icon>
+      </ion-item>
+  
+    </ion-card>
+    
+  </ion-content>
+
+</ion-content>

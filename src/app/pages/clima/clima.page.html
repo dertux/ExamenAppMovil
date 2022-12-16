@@ -1,0 +1,153 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Clima</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <img src="/assets/feliz.png" class="feliz"/>
+      </ion-avatar> 
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="clima" >
+      <ion-card-content>
+        <ion-label >{{todayDate | date: "EEEE dd MMMM"}}</ion-label>
+      
+    
+        <span *ngIf="clima">
+          <ion-row>
+            <p class="cli-comp-p">
+              {{(clima.main.temp).toFixed(0)}}° <br>
+              {{clima.weather.main}}
+            </p>
+          </ion-row>
+        </span>
+      </ion-card-content>
+
+      <ion-item *ngIf="clima">
+        <ion-grid>
+          <ion-row>
+            <ion-icon name="location" style="margin-top: 10px; min-height: 30px; margin-right: 5px;"></ion-icon>
+            <p style="font-weight: bold;">{{clima.name}}</p>
+          </ion-row>
+
+          <ion-row style="margin-top: 0; padding-top: 0;">
+            <p>
+             <!-- Temperatura Minima: {{clima.main.temp_min.toFixed(0)}}° <br> -->
+              Temperatura Máxima: {{clima.main.temp_max.toFixed(0)}}°
+            </p>
+          </ion-row>
+
+        </ion-grid>
+      </ion-item>
+    
+  </ion-card>
+
+
+<div class="sun">
+  <div class="sun-face">
+      <div class="sun-hlight"></div>
+      <div class="sun-leye"></div>
+      <div class="sun-reye"></div>
+      <div class="sun-lred"></div>
+      <div class="sun-rred"></div>
+      <div class="sun-nose"></div>
+  </div>
+  <div class="sun-anime">
+  <div class="sun-ball"></div>
+  <div class="sun-light">
+      <b></b>
+      <s></s>
+  </div>
+  <div class="sun-light">
+      <b></b>
+      <s></s>
+  </div>
+  <div class="sun-light">
+      <b></b>
+      <s></s>
+  </div>
+  <div class="sun-light">
+      <b></b>
+      <s></s>
+  </div>
+  <div class="sun-light">
+      <b></b>
+      <s></s>
+  </div>
+  <div class="sun-light">
+      <b></b>
+      <s></s>
+  </div>
+  <div class="sun-light">
+      <b></b>
+      <s></s>
+  </div>
+  <div class="sun-light">
+      <b></b>
+      <s></s>
+  </div>
+  <div class="sun-light">
+      <b></b>
+      <s></s>
+  </div>
+  <div class="sun-light">
+      <b></b>
+      <s></s>
+  </div>
+  <div class="sun-light">
+      <b></b>
+      <s></s>
+  </div>
+  <div class="sun-light">
+      <b></b>
+      <s></s>
+  </div>
+</div>
+</div>
+</ion-content>
+
+
+
+<!-- <ion-content [fullscreen]="true">
+  <ion-card class="clima" >
+    <ion-card-header>
+      <ion-card-title>Hoy</ion-card-title>
+      <ion-item>
+        <ion-label >{{todayDate | date: "EEE dd MMM"}}
+        </ion-label>
+      </ion-item>
+    </ion-card-header>
+
+    <ion-card-content>
+      <span *ngIf="prueba">
+        <ion-row>
+          <p class="cli-comp-p">
+            {{(prueba.main.temp).toFixed(0)}}° <br>
+            {{prueba.weather.main}}
+          </p>
+        </ion-row>
+      </span>
+    </ion-card-content>
+
+    <ion-item *ngIf="prueba">
+      <ion-grid>
+      </ion-grid>
+      <div *ngIf="prueba">
+        <ion-icon name="location"></ion-icon> <p>{{prueba.name}}</p>
+        <p>
+          T° Min: {{prueba.main.temp_min.toFixed(0)}}°  <br>
+          T° Max: {{prueba.main.temp_max.toFixed(0)}}° 
+        </p>
+      </div>
+    </ion-item>
+
+  </ion-card>
+</ion-content> -->
+
